@@ -15,10 +15,13 @@ repositories {
     publicRepos()
 }
 
+val g = "tz.co.asoft"
 val v = asoft.versions.root.get()
 
-group = "tz.co.asoft"
-version = v
+allprojects {
+    group = g
+    version = v
+}
 
 tasks.dokkaHtmlMultiModule {
     moduleName.set("Nation")
@@ -45,11 +48,11 @@ subprojects {
             name.set(p.name)
             description.set(p.description)
             inceptionYear.set("2019")
-            url.set("https://github.com/aSoft-Ltd/geo")
+            url.set("https://github.com/aSoft-Ltd/sim")
             licenses {
                 license {
                     name.set("MIT License")
-                    url.set("https://github.com/aSoft-Ltd/geo/blob/master/LICENSE")
+                    url.set("https://github.com/aSoft-Ltd/sim/blob/master/LICENSE")
                 }
             }
             developers {
@@ -60,9 +63,9 @@ subprojects {
                 }
             }
             scm {
-                url.set("https://github.com/aSoft-Ltd/geo/")
-                connection.set("scm:git:git://github.com/aSoft-Ltd/geo.git")
-                developerConnection.set("scm:git:ssh://git@github.com/aSoft-Ltd/geo.git")
+                url.set("https://github.com/aSoft-Ltd/sim/")
+                connection.set("scm:git:git://github.com/aSoft-Ltd/sim.git")
+                developerConnection.set("scm:git:ssh://git@github.com/aSoft-Ltd/sim.git")
             }
         }
     }
