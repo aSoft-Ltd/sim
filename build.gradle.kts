@@ -16,7 +16,7 @@ repositories {
 }
 
 val g = "tz.co.asoft"
-val v = asoft.versions.root.get()
+val v = libs.versions.asoft.get()
 
 allprojects {
     group = g
